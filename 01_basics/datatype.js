@@ -50,3 +50,34 @@ console.log("Hello");
 console.log(typeof bigNumber);//if not defined then undefined
 console.log(typeof myFunction);//returns function
 console.log(typeof hero);//return undefined
+
+
+//++++++++++++++++++++++++++++
+
+// memory 
+// stack memory(prmitive ) and heap memory(non - primitive)
+
+
+let myYoutubename ="rahulsahdotcom"
+
+let anothername = myYoutubename
+anothername = "swashank"
+
+console.log(myYoutubename)
+console.log(anothername);
+
+
+let user ={
+
+email :"ertyuio",
+code:"wer3",
+
+
+
+}
+
+let usertwo = user
+usertwo.email= "rahul@.com"
+
+console.log(user.email);
+console.log(usertwo.email);
