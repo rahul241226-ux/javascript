@@ -146,4 +146,120 @@ map.set('IN',"india")
 map.set('fr',"france")
 
 
-console.log(map);
+// console.log(map);
+
+
+
+///--------------------
+for (const key  of map) {
+    // console.log(key);
+    
+}
+
+//--
+
+
+// const myObject={
+
+
+
+// 'game1': 'NFS',
+// 'game2':'SPIDERMAN'
+
+
+// }
+// for (const [key, value] of myObject) {
+//     console.log(key, ':-',value)
+
+// }//myObject is not iterable
+
+
+///----------------------
+
+// const myObject = {
+
+
+
+// JS:'javascript',
+// cpp:'c++',
+// rb:'ruby',
+// swift:'swift by apple'
+
+
+
+// }
+
+// for (const key in myObject) {
+   
+//     console.log(`${key} shortcut is for ${myObject[key]}`)
+// }
+
+
+// const programming = ["js","rb","py","java"]
+// for (const key in programming) {
+
+//     console.log(key);
+    
+// }
+
+
+
+
+
+
+//------------------------------------------for each loop----------------
+
+
+
+
+
+const coding =[ "js","ruby","java","python","cpp"]
+
+// coding.forEach(  function (item) {
+//     console.log(item);
+    
+// } )
+
+// coding.forEach(  (item) => {
+
+//     console.log(item);
+    
+// })
+
+
+
+// function printMe(item){
+
+
+// console.log(item)
+
+// }
+
+
+
+
+
+const mycoding =[
+    {
+languagename :"javascript",
+languagefilename:"js",
+},
+
+    {
+languagename :"java",
+languagefilename:"j",
+},
+    {
+languagename :"python",
+languagefilename:"py",
+}
+
+
+]
+
+mycoding.forEach((item) => {
+
+console.log(item.languagename);
+
+
+})
