@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>final dom</title>
+</head>
+<body style="background-color: #212121; color: white">
+
+    <ul class="language">
+
+<li>javacript</li>
+
+    </ul>
+
+    
+</body>
+<script>
+
+function addlanaguage(langname){
+
+
+const li = document.createElement('li') ;
+li.innerHTML =`${langname}` 
+document.querySelector('.language').appendChild(li)
+
+
+}
+addlanaguage("python") ;
+addlanaguage("typescript") ;
+
+
+function addOptionLanguage(langName){
+
+const li = document.createElement('li')
+li.appendChild(document.createTextNode(langName))
+document.querySelector('.language').appendChild(li)
+}
+
+addOptionLanguage("golang") ;
+
+
+//Edit
+
+const secondlang = document.querySelector("li:nth-child(2)")
+const newli = document.createElement('li')
+newli.textContent = "Mojo"
+secondlang.replaceWith(newli)
+
+//secondlang.innerHTML = "mojo"
+
+
+//Edit first child
+
+const firstlang = document.querySelector("li:nth-child(1)")
+const newl = document.createElement('li')
+newl.textContent = "csharp"
+firstlang.replaceWith(newl)
+
+
+//edit last child
+
+
+const lastlang = document.querySelector("li:last-child")
+const newlast = document.createElement('li')
+newlast.textContent = "java"
+lastlang.replaceWith(newlast)
+
+
+</script>
+</html>
