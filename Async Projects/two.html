@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul code's</title>
+</head>
+<body>
+    <h1>Code with Rahul </h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+
+const sayrahul =function(){
+
+console.log("rahul");
+
+
+
+}
+const changeText = function(){
+
+document.querySelector('h1').innerHTML = "JS code";
+
+}
+
+const changeme = setTimeout(changeText, 2000)// 2000 means 2 seconds 
+
+document.querySelector('#stop').addEventListener('click', function(){
+
+clearTimeout(changeme);
+console.log("STOPPED");
+
+})
+
+
+
+</script>
+</html>
